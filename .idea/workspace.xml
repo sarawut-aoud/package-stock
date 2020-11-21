@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6e7455f0-bf6f-456d-9400-1d18d1a31cf7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1ifpuB8mCq6kKJdCCn3alPvryGC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\pro\dist\php\action" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\pro\dist\php" />
+      <recent name="C:\xampp\htdocs\pro\dist" />
+      <recent name="C:\xampp\htdocs\pro" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e7455f0-bf6f-456d-9400-1d18d1a31cf7" name="Default Changelist" comment="" />
+      <created>1602308720585</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602308720585</updated>
+      <workItem from="1602308721648" duration="1604000" />
+      <workItem from="1605334352443" duration="12573000" />
+      <workItem from="1605426738951" duration="4320000" />
+      <workItem from="1605491192945" duration="2453000" />
+      <workItem from="1605498224189" duration="5969000" />
+      <workItem from="1605538284763" duration="3486000" />
+      <workItem from="1605783978421" duration="1474000" />
+      <workItem from="1605795035275" duration="6153000" />
+      <workItem from="1605853899907" duration="4991000" />
+      <workItem from="1605944377530" duration="5060000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="761" y="32" width="971" height="985" key="#HTML" timestamp="1605335473402">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="761" y="32" width="971" height="985" key="#HTML/0.0.1920.1050@0.0.1920.1050" timestamp="1605335473402" />
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605335416488">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605335416488" />
+    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605855978992">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605855978992" />
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1605854283903">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1605854283903" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1605347066269">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1605347066269" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1605347066268">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1605347066268" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1605347066268">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1605347066268" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1605347066269">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605347066269" />
+    <state x="794" y="448" key="NewPhpFileDialog" timestamp="1605949233493">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="794" y="448" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605949233493" />
+    <state x="461" y="170" key="SettingsEditor" timestamp="1605335430325">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605335430325" />
+    <state x="616" y="243" key="run.anything.popup" timestamp="1605544788148">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605544788148" />
+  </component>
+</project>
