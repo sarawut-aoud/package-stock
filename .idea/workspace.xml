@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6e7455f0-bf6f-456d-9400-1d18d1a31cf7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,15 +28,20 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ifpuB8mCq6kKJdCCn3alPvryGC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eportfolio" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -26,7 +49,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -35,6 +58,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\pro\dist\php" />
+      <recent name="C:\xampp\htdocs\pro\dist\php\menu" />
       <recent name="C:\xampp\htdocs\pro\dist" />
       <recent name="C:\xampp\htdocs\pro" />
     </key>
@@ -57,29 +81,57 @@
       <workItem from="1605795035275" duration="6153000" />
       <workItem from="1605853899907" duration="4991000" />
       <workItem from="1605944377530" duration="5060000" />
+      <workItem from="1605957265198" duration="10592000" />
+      <workItem from="1606026194454" duration="6088000" />
+      <workItem from="1606148348398" duration="2517000" />
+      <workItem from="1606205880730" duration="4582000" />
+      <workItem from="1606464893179" duration="186000" />
+      <workItem from="1606545458668" duration="34000" />
+      <workItem from="1606545573888" duration="8267000" />
+      <workItem from="1606801698756" duration="5136000" />
+      <workItem from="1606807902356" duration="1298000" />
+      <workItem from="1607324109742" duration="1576000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="761" y="32" width="971" height="985" key="#HTML" timestamp="1605335473402">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="761" y="32" width="971" height="985" key="#HTML/0.0.1920.1050@0.0.1920.1050" timestamp="1605335473402" />
-    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605335416488">
+    <state x="336" y="366" key="#SQL_Dialects" timestamp="1606210020205">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="336" y="366" key="#SQL_Dialects/0.0.1920.1050@0.0.1920.1050" timestamp="1606210020205" />
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606051174042">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605335416488" />
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606051174042" />
     <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605855978992">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605855978992" />
-    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1605854283903">
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1606551965723">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1605854283903" />
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1606551965723" />
+    <state x="740" y="280" key="FileChooserDialogImpl/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606047179211" />
     <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1605347066269">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -96,14 +148,15 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1605347066269" />
-    <state x="794" y="448" key="NewPhpFileDialog" timestamp="1605949233493">
+    <state x="794" y="448" key="NewPhpFileDialog" timestamp="1606801838336">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="794" y="448" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1605949233493" />
-    <state x="461" y="170" key="SettingsEditor" timestamp="1605335430325">
+    <state x="794" y="448" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1606801838336" />
+    <state x="794" y="448" key="NewPhpFileDialog/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1606051490632" />
+    <state x="461" y="170" key="SettingsEditor" timestamp="1607324204150">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605335430325" />
+    <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1607324204150" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1605544788148">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

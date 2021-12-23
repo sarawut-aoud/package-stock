@@ -22,7 +22,6 @@ $pa_name = $_POST["pa_name"];
 $fac_id = $_POST["fac_id"];
 $pa_barcode =  $_POST["pa_barcode"];
 $pa_sender = $_POST["pa_sender"];
-$r_name = $_POST["r_name"];
 $datenow = $now->format("Y-m-d H:i:s");
 
 if($pa_name){
@@ -31,7 +30,7 @@ if($pa_name){
     $total = mysql_num_rows($result);
 
     if($total == 0){
-        $sql = "INSERT INTO package (pa_name,pa_barcode,pa_sender,pa_date,fac_id,r_name) VALUES('$pa_name','$pa_barcode','$pa_sender','$datenow','$fac_id','$r_name')";
+        $sql = "INSERT INTO package (pa_name,pa_barcode,pa_sender,pa_date,fac_id) VALUES('$pa_name','$pa_barcode','$pa_sender','$datenow','$fac_id')";
         mysql_query($sql,$conn)
         or die("3. ไม่สามารถประมวลผลคำสั่งได้").mysql_error();
         mysql_close();

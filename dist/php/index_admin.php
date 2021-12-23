@@ -1,13 +1,17 @@
 <?php
-ob_start();
+
 include 'connect.php';
 
-$pa_id = $_GET["pa_id"];
-$sql = "SELECT * FROM package pa,faculty f
-        WHERE pa.fac_id = f.fac_id  ";
+
+$sql = "SELECT * FROM receive_detail rd , package pa , receive r ,faculty f
+        WHERE pa.pa_id = rd.pa_id AND r.r_id = rd.r_id AND pa.fac_id = f.fac_id  ";
 $result = mysql_query($sql,$conn)
 or die ("Can't Query ! ").mysql_error();
 
+ $sql2 = "SELECT * FROM receive_detail rd , receive r 
+            WHERE  r.r_id = rd.r_id ";
+    $result2 =mysql_query($sql2,$conn)
+    or die ("Can't Query ! ").mysql_error();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,9 +27,9 @@ or die ("Can't Query ! ").mysql_error();
     include 'script2.php';
     include  'script.php';
     ?>
+
 </head>
 <body class="sb-nav-fixed">
-
 <?php
 include 'menu_admin.php';
 include 'layoutSide.php';
@@ -79,8 +83,9 @@ include 'layoutSide.php';
                                 <tbody>
 
                                 <?php
-                                while ($rs = mysql_fetch_object($result)) {
+                                while (($rs = mysql_fetch_object($result)) AND ($rs2=mysql_fetch_object($result2)) ) {
                                     ?>
+
                                     <tr>
                                         <td align="center"><?php echo"$rs->pa_id";?></td>
                                         <td align="center"><?php echo"$rs->pa_barcode";?></td>
@@ -88,9 +93,21 @@ include 'layoutSide.php';
                                         <td align="center"><?php echo"$rs->fac_name";?></td>
                                         <td align="center"><?php echo"$rs->pa_sender";?></td>
                                         <td align="center"><?php echo"$rs->pa_date";?></td>
-                                        <td align="center"><?php echo"$rs->r_name";?></td>
+                                        <td align="center">
+                                            <a href="frm_receivedetail.php?r_id=<?php echo $rs->r_id ;?>">
+                                                <?php echo"$rs->r_name";?>
+                                            </a>
+                                        </td>
                                         <td align="center"><?php echo"$rs->r_date";?></td>
-                                        <td align="center"><?php echo"$rs->status";?></td>
+                                        <td align="center"><?php
+
+                                                if ($rs2->status == 2) {
+                                                    echo "<span class='badge badge-pill badge-danger'> ยังไม่ได้รับพัสดุ </span>";
+                                                } elseif ($rs2->status == 1) {
+                                                    echo "<span class='badge badge-pill badge-success'> รับพัสดุแล้ว </span>";
+                                                }
+                                            ?>
+                                        </td>
                                         <!--<td align="center">
                                             <a class="btn btn-warning"  href="frm_editper.php?p_id=<?php /*echo $rs->p_id;*/?>">
                                                 <i class="fas fa-pen"></i> Edit
@@ -103,6 +120,7 @@ include 'layoutSide.php';
 
 
                                     <?php
+
                                 }
                                 ?>
                                 </tbody>

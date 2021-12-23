@@ -64,7 +64,8 @@ include 'layoutSide.php';
                                 <tr>
                                     <th width="10%">No</th>
                                     <th width="20%">Name</th>
-                                    <th width="25%">Faculty</th>
+                                    <th width="20%">Faculty</th>
+                                    <th width="20%">ID CARD</th>
                                     <th width="15%"></th>
                                     <!--<th width="25%"></th>-->
                                 </tr>
@@ -73,7 +74,8 @@ include 'layoutSide.php';
                                 <tr>
                                     <th width="10%">No</th>
                                     <th width="20%">Name</th>
-                                    <th width="25%">Faculty</th>
+                                    <th width="20%">Faculty</th>
+                                    <th width="20%">ID CARD</th>
                                     <th width="15%"></th>
                                     <!--<th width="25%"></th>-->
                                 </tr>
@@ -87,6 +89,7 @@ include 'layoutSide.php';
                                         <td align="center"><?php echo"$rs->p_id";?></td>
                                         <td align="center"><?php echo"$rs->p_name";?></td>
                                         <td align="center"><?php echo"$rs->fac_name";?></td>
+                                        <td align="center"><?php echo"$rs->p_card";?></td>
                                         <td align="center">
                                             <a class="btn btn-warning"  href="frm_editper.php?p_id=<?php echo $rs->p_id;?>">
                                                 <i class="fas fa-pen"></i> Edit

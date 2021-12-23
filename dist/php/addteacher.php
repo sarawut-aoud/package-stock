@@ -15,6 +15,7 @@ include "alert.php";
 $t_name = $_POST['t_name'];
 $t_tel = $_POST['t_tel'];
 $fac_id = $_POST['fac_id'];
+$t_card = $_POST['t_card '];
 
 $fileupload = $_FILES['photo']['tmp_name'];
 $fileupload_name = uniqid().$_FILES['photo']['name'];
@@ -29,9 +30,9 @@ if($t_name && $t_tel){
                 mkdir("picture");
             }
             copy($fileupload,"picture/".$fileupload_name);
-            $sql = "INSERT INTO teacher (t_name,t_tel,fac_id,t_pic) VALUES ('$t_name','$t_tel','$fac_id','$fileupload_name')";
+            $sql = "INSERT INTO teacher (t_name,t_tel,fac_id,t_pic,t_card) VALUES ('$t_name','$t_tel','$fac_id','$fileupload_name','$t_card')";
         }else{
-            $sql = "INSERT INTO teacher (t_name,t_tel,fac_id) VALUES ('$t_name','$t_tel','$fac_id')";
+            $sql = "INSERT INTO teacher (t_name,t_tel,fac_id,t_card ) VALUES ('$t_name','$t_tel','$fac_id','$t_card')";
         }
         mysql_query($sql,$conn)
         or die("3. ไม่สามารถประมวลผลคำสั่งได้").mysql_error();
@@ -41,8 +42,9 @@ if($t_name && $t_tel){
     }
 }else{
     $msg = "";
-    if(!$s_name) $msg .= " ชื่อ - สกุล";
-    if(!$s_tel) $msg .= " เบอร์โทร";
+    if(!$t_name) $msg .= " ชื่อ - สกุล";
+    if(!$t_tel) $msg .= " เบอร์โทร";
+    if(!$t_card) $msg .= " ID CARD";
     echo error_h3("กรุณาป้อน{$msg}","frm_addteacher.php");
     return;
 }

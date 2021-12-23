@@ -96,7 +96,7 @@ include 'layoutSide.php';
                                         <td align="center"><?php echo"$rs->fac_name";?></td>
                                         <td align="center"><?php echo"$rs->pa_sender";?></td>
                                         <td align="center"><?php echo"$rs->pa_date";?></td>
-                                        <td align="center"><a  href="frm_receive.php?pa_id=<?php echo $rs->pa_id;?>">
+                                        <td align="center"><a  href="frm_receive.php">
                                                 Manage Receive
                                             </a></td>
                                         <td align="center">

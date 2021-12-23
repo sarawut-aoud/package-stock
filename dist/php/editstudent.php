@@ -16,6 +16,7 @@ $s_id = $_POST['s_id'];
 $s_pic = $_POST['s_pic'];
 $s_name = $_POST['s_name'];
 $s_tel = $_POST['s_tel'];
+$s_card = $_POST['s_card'];
 $fac_id = $_POST['fac_id'];
 
 
@@ -34,9 +35,9 @@ if($fileupload != ""){
         @unlink("picture/$s_pic");
     }
     copy($fileupload,"picture/".$fileupload_name);
-    $sql = "UPDATE student SET s_name = '$s_name',s_tel = '$s_tel',fac_id = '$fac_id',s_pic = '$fileupload_name' WHERE s_id = '$s_id' ";
+    $sql = "UPDATE student SET s_name = '$s_name',s_tel = '$s_tel',fac_id = '$fac_id',s_pic = '$fileupload_name',s_card = '$s_card' WHERE s_id = '$s_id' ";
 }else{
-    $sql = "UPDATE student SET s_name = '$s_name',s_tel = '$s_tel',fac_id = '$fac_id' WHERE s_id = '$s_id' ";
+    $sql = "UPDATE student SET s_name = '$s_name',s_tel = '$s_tel',fac_id = '$fac_id',s_card = '$s_card' WHERE s_id = '$s_id' ";
 }
 
 mysql_query($sql,$conn)

@@ -71,10 +71,10 @@ include 'layoutSide.php';
                                             <td colspan="2">
                                                 <div class="input-group mb-3">
                                                     <div class="input-group-prepend">
-                                                        <span class="input-group-text" id="basic-addon1">Package Name</span>
+                                                        <span class="input-group-text" id="basic-addon1">Name</span>
                                                     </div>
                                                     <input name="pa_name" id="pa_name" type="text" class="form-control"
-                                                           value="<?php echo "$rs[pa_name]";?>" placeholder="Package name"  aria-describedby="basic-addon1">
+                                                           value="<?php echo "$rs[pa_name]";?>" placeholder=" name"  aria-describedby="basic-addon1">
                                                 </div>
                                             </td>
                                         </tr>

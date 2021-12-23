@@ -127,6 +127,17 @@ include 'layoutSide.php';
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td colspan="2">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon1">ID Card </span>
+                                                    </div>
+                                                    <input name="s_card" id="s_card" type="text" class="form-control"
+                                                           value="<?php echo "$rs[s_card]"?>" placeholder="ID Card"  aria-describedby="basic-addon1">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
                                             <td colspan="2" align="center">
                                                 <input class="btn btn-success" type="submit" value="Save" >
                                                 <!--<input class="btn btn-danger" type="reset" value="Cancel">-->

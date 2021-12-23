@@ -106,6 +106,7 @@ include 'layoutSide.php';
                 </div>
                 </td>
                 </tr>
+
                 <tr>
                     <td colspan="2">
                         <div class="input-group mb-3">
@@ -123,6 +124,17 @@ include 'layoutSide.php';
                                     echo "</option>\n";
                                 }
                                 ?>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">ID Card </span>
+                            </div>
+                            <input name="t_card" id="t_card" type="text" class="form-control"
+                                   value="<?php echo "$rs[t_card]"?>" placeholder="ID Card"  aria-describedby="basic-addon1">
                         </div>
                     </td>
                 </tr>

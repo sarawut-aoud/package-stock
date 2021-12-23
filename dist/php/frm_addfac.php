@@ -9,7 +9,7 @@
     <title>ระบบตรวจรับพัสดุ</title>
     <?php
     include 'script2.php';
-
+    include 'check.php';
     ?>
 </head>
 <body class="sb-nav-fixed">

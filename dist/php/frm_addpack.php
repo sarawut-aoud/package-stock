@@ -1,5 +1,6 @@
 <?php
     include 'connect.php';
+include 'check.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -64,10 +65,10 @@ include 'layoutSide.php';
                                             <td colspan="2">
                                                 <div class="input-group mb-3">
                                                     <div class="input-group-prepend">
-                                                        <span class="input-group-text" id="basic-addon1">Package Name</span>
+                                                        <span class="input-group-text" id="basic-addon1"> Name</span>
                                                     </div>
                                                     <input name="pa_name" id="pa_name" type="text" class="form-control"
-                                                           placeholder="Package name"  aria-describedby="basic-addon1">
+                                                           placeholder="Name"  aria-describedby="basic-addon1">
                                                 </div>
                                             </td>
                                         </tr>
@@ -89,6 +90,7 @@ include 'layoutSide.php';
                                                 </div>
                                             </td>
                                         </tr>
+
                                         <tr>
                                         <td colspan="2">
                                             <div class="input-group mb-3">
@@ -100,7 +102,7 @@ include 'layoutSide.php';
                                             </div>
                                         </td>
                                         </tr>
-                                        <tr>
+                                        <!--<tr>
                                             <td colspan="2">
                                                 <div class="input-group mb-3">
                                                     <div class="input-group-prepend">
@@ -110,10 +112,10 @@ include 'layoutSide.php';
                                                            placeholder="Receive name"  aria-describedby="basic-addon1">
                                                 </div>
                                             </td>
-                                        </tr>
+                                        </tr>-->
                                         <tr>
                                             <td colspan="2" align="center">
-                                                <input class="btn btn-success" type="submit" value="Save" Q">
+                                                <input class="btn btn-success" type="submit" value="Save" >
                                                 <!--<input class="btn btn-danger" type="reset" value="Cancel">-->
                                             </td>
                                         </tr>

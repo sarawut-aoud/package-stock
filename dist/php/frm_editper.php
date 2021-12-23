@@ -1,5 +1,6 @@
 <?php
 include 'connect.php';
+include 'check.php';
 $p_id = $_GET["p_id"];
 $sql = "SELECT * FROM personal where p_id = '$p_id'";
 $result = mysql_query($sql,$conn)
@@ -102,9 +103,10 @@ include 'layoutSide.php';
                                                     </div>
 
                                                 </div>
-                </div>
-                </td>
-                </tr>
+                                     </div>
+                                </td>
+                            </tr>
+
                 <tr>
                     <td colspan="2">
                         <div class="input-group mb-3">
@@ -123,6 +125,17 @@ include 'layoutSide.php';
                                     echo "</option>\n";
                                 }
                                 ?>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">ID Card </span>
+                            </div>
+                            <input name="p_card" id="p_card" type="text" class="form-control"
+                                   value="<?php echo "$rs[p_card]"?>" placeholder="ID Card"  aria-describedby="basic-addon1">
                         </div>
                     </td>
                 </tr>

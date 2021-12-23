@@ -1,5 +1,6 @@
 <?php
     include 'connect.php';
+include 'check.php';
     $fac_id = $_GET["fac_id"];
 
     $sql = "SELECT * FROM faculty WHERE fac_id = '$fac_id'";

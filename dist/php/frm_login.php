@@ -14,7 +14,7 @@
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-primary">
+<body class="bg-warning">
 <div id="layoutAuthentication">
     <div id="layoutAuthentication_content">
         <main>
@@ -25,6 +25,7 @@
                             <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
                             <div class="card-body">
                                 <form action="login.php" method="post">
+
                                     <div class="form-group">
                                         <label class="small mb-1" for="inputEmailAddress">Username</label>
                                         <input class="form-control py-4" name="login" id="login" type="text" placeholder="Enter Username" />
@@ -32,22 +33,39 @@
                                     <div class="form-group">
                                         <label class="small mb-1" for="inputPassword">Password</label>
                                         <input class="form-control py-4" name="password" id="password" type="password" placeholder="Enter password" />
+                                        <label  class="small mb-4 badge badge-pill badge-warning" >Password : ครูอาจารย์:บุคลากร:นักศึกษา : "1234" </label>
                                     </div>
                                     <div>
                                         <td colspan="2">
-                                            <div class="form-check">
-                                                <input required class="form-check-input" value="1" type="radio" name="user_status" id="exampleRadios1"
+                                            <div class="form-check form-check-inline">
+                                                <input  class="form-check-input" value="1" type="radio"
+                                                       name="user_status" id="exampleRadios1"
                                                        value="option1">
                                                 <label class="form-check-label" for="user_status">
                                                     ครูอาจารย์
                                                 </label>
                                             </div>
-
-                                            <div class="form-check">
-                                                <input class="form-check-input" value="0" type="radio" name="user_status" id="exampleRadios2"
-                                                       value="option2">
+                                            <div class="form-check form-check-inline">
+                                                <input  class="form-check-input" value="2" type="radio"
+                                                        name="user_status" id="exampleRadios2"
+                                                        value="option2">
                                                 <label class="form-check-label" for="user_status">
-                                                    ผู้ดูเเลระบบ
+                                                    บุคลากร
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input  class="form-check-input" value="3" type="radio"
+                                                        name="user_status" id="exampleRadios3"
+                                                        value="option3">
+                                                <label class="form-check-label" for="user_status">
+                                                    นักศึกษา
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" value="4" type="radio"
+                                                       name="user_status" id="exampleRadios4"
+                                                       value="option4">
+                                                <label class="form-check-label" for="user_status"> ผู้ดูเเลระบบ
                                                 </label>
                                             </div>
                                             <br>
@@ -56,8 +74,13 @@
                                                 <button type="reset" class="btn btn-secondary"> <i class="fas fa-ban"></i> ยกเลิก</button>
                                             </div>
                                             <br>
+                                            <div align="center">
+                                                <a  href="index.php" class="btn btn-success" > </i> INDEX </a>
+                                            </div>
+                                            <br>
                                         </td>
                                     </div>
+
                                 </form>
                             </div>
                         </div>

@@ -16,6 +16,7 @@ $p_id = $_POST['p_id'];
 $p_pic = $_POST['p_pic'];
 $p_name = $_POST['p_name'];
 $p_tel = $_POST['p_tel'];
+$p_card = $_POST['p_card'];
 $fac_id = $_POST['fac_id'];
 
 
@@ -34,9 +35,9 @@ if($fileupload != ""){
         @unlink("picture/$p_pic");
     }
     copy($fileupload,"picture/".$fileupload_name);
-    $sql = "UPDATE personal SET p_name = '$p_name',p_tel = '$p_tel',fac_id = '$fac_id',p_pic = '$fileupload_name' WHERE p_id = '$p_id' ";
+    $sql = "UPDATE personal SET p_name = '$p_name',p_tel = '$p_tel',fac_id = '$fac_id',p_pic = '$fileupload_name',p_card = '$p_card' WHERE p_id = '$p_id' ";
 }else{
-    $sql = "UPDATE personal SET p_name = '$s_name',p_tel = '$p_tel',fac_id = '$fac_id' WHERE p_id = '$p_id' ";
+    $sql = "UPDATE personal SET p_name = '$p_name',p_tel = '$p_tel',fac_id = '$fac_id',p_card = '$p_card' WHERE p_id = '$p_id' ";
 }
 
 mysql_query($sql,$conn)

@@ -30,7 +30,7 @@ if($pa_name){
     echo mysql_num_rows($total);
 
     if(mysql_num_rows($total) == 0){
-        $sql = "UPDATE package SET pa_name = '$pa_name',pa_barcode = '$pa_barcode',pa_sender = '$pa_sender',pa_date = '$datenow',fac_id = '$fac_id',r_name = '$r_name' WHERE pa_id = '$pa_id'";
+        $sql = "UPDATE package SET pa_name = '$pa_name',pa_barcode = '$pa_barcode',pa_sender = '$pa_sender',pa_date = '$datenow',fac_id = '$fac_id'WHERE pa_id = '$pa_id'";
         mysql_query($sql,$conn)
         or die("3. ไม่สามารถประมวลผลคำสั่งได้").mysql_error();
     }else{

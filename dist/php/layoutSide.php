@@ -21,6 +21,10 @@ if(isset($_SESSION["valid_uname"]) && isset($_SESSION["valid_pwd"])){
                         <div class="sb-nav-link-icon"><i class="fas fa-box-open"></i></div>
                         Package
                     </a>
+                    <a class="nav-link" href="receivedetail.php">
+                        <div class="sb-nav-link-icon"><i class="fas fa-hand-holding"></i></div>
+                        Receive
+                    </a>
                     <a class="nav-link" href="showpersonal.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-user-friends"></i></div>
                         Personal
@@ -37,6 +41,7 @@ if(isset($_SESSION["valid_uname"]) && isset($_SESSION["valid_pwd"])){
                         <div class="sb-nav-link-icon"><i class="fas fa-school"></i></div>
                         Faculty
                     </a>
+
 
 
                 </div>

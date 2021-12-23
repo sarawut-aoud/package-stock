@@ -1,11 +1,6 @@
 <?php
     include 'connect.php';
 include 'check.php';
-    $pa_id = $_GET["pa_id"];
-    $sql = "SELECT * FROM package  WHERE pa_id = '$pa_id' ";
-    $result = mysql_query($sql,$conn)
-        or die ("Can't Query ! ").mysql_error();
-    $rs = mysql_fetch_array($result);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,17 +50,7 @@ include 'layoutSide.php';
                                                Manage Receive
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td colspan="2">
-                                                <div class="input-group mb-3">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text" id="basic-addon1">Package Name</span>
-                                                    </div>
-                                                    <input name="pa_name" id="pa_name" type="text" class="form-control"
-                                                          disabled value="<?php echo "$rs[pa_name]"?>" placeholder="Receive name"  aria-describedby="basic-addon1">
-                                                </div>
-                                            </td>
-                                        </tr>
+
                                         <tr>
                                             <td colspan="2">
                                                 <div class="input-group mb-3">
@@ -73,7 +58,19 @@ include 'layoutSide.php';
                                                         <span class="input-group-text" id="basic-addon1">Receive Name</span>
                                                     </div>
                                                     <input name="r_name" id="r_name" type="text" class="form-control"
-                                                           value="<?php echo "$rs[r_name]"?>" placeholder="Receive name"  aria-describedby="basic-addon1">
+                                                            placeholder="Receive name"  aria-describedby="basic-addon1">
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td colspan="2">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon1">Tel.</span>
+                                                    </div>
+                                                    <input name="r_tel" id="r_tel" type="text" class="form-control"
+                                                           placeholder="tel"  aria-describedby="basic-addon1">
                                                 </div>
                                             </td>
                                         </tr>
@@ -81,25 +78,29 @@ include 'layoutSide.php';
                                             <td colspan="2">
                                                 <div class="input-group mb-3">
                                                     <div class="input-group-prepend">
-                                                        <span class="input-group-text" id="basic-addon1">Status </span>
+                                                        <span class="input-group-text" id="basic-addon1">Faculty </span>
                                                     </div>
-                                                    <select class="custom-select" id="status" name="status">
-                                                        <option value="" selected> Choose... </option>
-                                                        <option  value="รับพัสดุแล้ว">รับพัสดุแล้ว</option>
-                                                        <option  value="ยังไม่ได้รับพัสดุ">ยังไม่ได้รับพัสดุ</option>
-
+                                                    <select class="custom-select" name="fac_id" id="fac_id" >
+                                                        <?php
+                                                        $sql1 = "SELECT * from faculty ";
+                                                        $result1 = mysql_query($sql1,$conn);
+                                                        while ($rs1=mysql_fetch_array($result1)){
+                                                            echo "<option value = $rs1[fac_id]>$rs1[fac_name]</option>";
+                                                        }
+                                                        ?>
                                                     </select>
                                                 </div>
                                             </td>
                                         </tr>
+
                                         <tr>
                                             <td colspan="2" align="center">
-                                                <input class="btn btn-success" type="submit" value="Save" Q">
-                                                <!--<input class="btn btn-danger" type="reset" value="Cancel">-->
+                                                <input  class="btn btn-success"  type="submit" value="Save"  ">
+
                                             </td>
                                         </tr>
                                     </table>
-                                    <input name="pa_id" type="hidden" id="pa_id" value="<?php echo "$rs[pa_id]";?>" >
+
                                 </form>
                                 <!--            Inner Table-->
                             </td>
@@ -109,13 +110,10 @@ include 'layoutSide.php';
                 </div>
             </div>
         </div>
+    </main>
+    <?php
+    include 'footer.php';
+    ?>
 </div>
-</main>
-<?php
-include 'footer.php';
-?>
-</div>
-</div>
-
 </body>
 </html>
